@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Social media app: allow authenticated users to read/write posts
+    match /social_media_posts/{postId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Fallback: allow read/write until expiry (adjust or remove in production)
+    match /{document=**} {
+      allow read, write: if request.time < timestamp.date(2026, 1, 30);
+    }
+  }
+}

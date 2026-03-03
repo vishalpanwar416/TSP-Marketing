@@ -1,0 +1,777 @@
+[debug] [2026-01-17T22:16:25.179Z] ----------------------------------------------------------------------
+[debug] [2026-01-17T22:16:25.187Z] Command:       /opt/homebrew/Cellar/node/24.10.0/bin/node /opt/homebrew/bin/firebase emulators:start
+[debug] [2026-01-17T22:16:25.187Z] CLI Version:   14.2.0
+[debug] [2026-01-17T22:16:25.187Z] Platform:      darwin
+[debug] [2026-01-17T22:16:25.187Z] Node Version:  v24.10.0
+[debug] [2026-01-17T22:16:25.187Z] Time:          Sun Jan 18 2026 03:46:25 GMT+0530 (India Standard Time)
+[debug] [2026-01-17T22:16:25.187Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-17T22:16:25.365Z] Object "/firestore" in "firebase.json" has unknown property: {"additionalProperty":"location"}
+[debug] [2026-01-17T22:16:25.365Z] Field "/firestore" in "firebase.json" is possibly invalid: must be array
+[debug] [2026-01-17T22:16:25.365Z] Field "/firestore" in "firebase.json" is possibly invalid: must match a schema in anyOf
+[debug] [2026-01-17T22:16:25.370Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-17T22:16:25.370Z] > authorizing via signed-in user (vishalpanwar416@gmail.com)
+[debug] [2026-01-17T22:16:25.641Z] openjdk version "23.0.2" 2025-01-21
+
+[debug] [2026-01-17T22:16:25.641Z] OpenJDK Runtime Environment Homebrew (build 23.0.2)
+OpenJDK 64-Bit Server VM Homebrew (build 23.0.2, mixed mode, sharing)
+
+[debug] [2026-01-17T22:16:25.648Z] Parsed Java major version: 23
+[info] i  emulators: Starting emulators: functions, firestore, hosting, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, hosting, storage, extensions"}}
+[debug] [2026-01-17T22:16:25.650Z] Checked if tokens are valid: false, expires at: 1768669841268
+[debug] [2026-01-17T22:16:25.650Z] Checked if tokens are valid: false, expires at: 1768669841268
+[debug] [2026-01-17T22:16:25.650Z] > refreshing access token with scopes: []
+[debug] [2026-01-17T22:16:25.651Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-17T22:16:25.651Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-17T22:16:25.854Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-17T22:16:25.859Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-17T22:16:25.915Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/channel-partner-54334 [none]
+[debug] [2026-01-17T22:16:27.517Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/channel-partner-54334 200
+[debug] [2026-01-17T22:16:27.521Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/channel-partner-54334 {"projectNumber":"801644118506","projectId":"channel-partner-54334","lifecycleState":"ACTIVE","name":"channel-partner","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-28T08:03:46.726503Z"}
+[debug] [2026-01-17T22:16:28.720Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.720Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.720Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.720Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2026-01-17T22:16:28.721Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.721Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-01-17T22:16:28.733Z] [hub] writing locator at /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/hub-channel-partner-54334.json
+[debug] [2026-01-17T22:16:28.741Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2026-01-17T22:16:28.948Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.948Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.948Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-01-17T22:16:28.948Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, database, pubsub, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, database, pubsub, dataconnect\u001b[22m"}}
+[debug] [2026-01-17T22:16:28.975Z] defaultcredentials: writing to file /Users/vishalpanwar/.config/firebase/vishalpanwar416_gmail_com_application_default_credentials.json
+[debug] [2026-01-17T22:16:29.000Z] Setting GAC to /Users/vishalpanwar/.config/firebase/vishalpanwar416_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/vishalpanwar/.config/firebase/vishalpanwar416_gmail_com_application_default_credentials.json"}}
+[debug] [2026-01-17T22:16:29.000Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:29.001Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:29.001Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/adminSdkConfig [none]
+[debug] [2026-01-17T22:16:29.934Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/adminSdkConfig 200
+[debug] [2026-01-17T22:16:29.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/adminSdkConfig {"projectId":"channel-partner-54334","databaseURL":"https://channel-partner-54334-default-rtdb.firebaseio.com","storageBucket":"channel-partner-54334.firebasestorage.app"}
+[info] i  firestore: downloading cloud-firestore-emulator-v1.19.8.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.19.8.jar..."}}
+[debug] [2026-01-17T22:16:30.132Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 
+[debug] [2026-01-17T22:16:30.610Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 200
+[debug] [2026-01-17T22:16:30.610Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar [stream]
+[debug] [2026-01-17T22:16:32.042Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:32.041Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:32.042Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:32.041Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:32.046Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:35.155Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:35.155Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:35.155Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:35.155Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:35.156Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:35.202Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:35.202Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:35.202Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:35.202Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:35.203Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.378Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-01-17T22:16:42.378Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2026-01-17T22:16:42.378Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/vishalpanwar/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","channel-partner-54334","--rules","/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/vishalpanwar/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"channel-partner-54334\",\"--rules\",\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2026-01-17T22:16:42.392Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates-2026-01-17T22:16:42.392Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.393Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates-2026-01-17T22:16:42.392Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:42.394Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.395Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates-2026-01-17T22:16:42.395Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.395Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates-2026-01-17T22:16:42.395Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:42.396Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.400Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:42.400Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.400Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:42.400Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:42.401Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.401Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:42.401Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:42.401Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:16:42.401Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:42.402Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:43.389Z] Jan 18, 2026 3:46:43 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 18, 2026 3:46:43 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2026-01-17T22:16:43.406Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2026-01-17T22:16:43.406Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.3.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.3.jar..."}}
+[debug] [2026-01-17T22:16:43.615Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 
+[debug] [2026-01-17T22:16:43.940Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 200
+[debug] [2026-01-17T22:16:43.940Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar [stream]
+[debug] [2026-01-17T22:16:44.278Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:44.278Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:44.278Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:16:44.278Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:16:44.278Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:16:54.068Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2026-01-17T22:16:54.685Z] Temp file directory for storage emulator: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/firebase/storage/blobs"}}
+[debug] [2026-01-17T22:16:54.693Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:54.693Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:54.694Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/channel-partner-54334/sites 
+[debug] [2026-01-17T22:16:56.549Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/channel-partner-54334/sites 200
+[debug] [2026-01-17T22:16:56.549Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/channel-partner-54334/sites {"sites":[{"name":"projects/channel-partner-54334/sites/channel-partner-54334","defaultUrl":"https://channel-partner-54334.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-17T22:16:56.550Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:56.550Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:56.550Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/webApps/-/config [none]
+[debug] [2026-01-17T22:16:57.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/webApps/-/config 200
+[debug] [2026-01-17T22:16:57.840Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334/webApps/-/config {"projectId":"channel-partner-54334","appId":"1:801644118506:web:5645c69a35f3e49a3ab293","databaseURL":"https://channel-partner-54334-default-rtdb.firebaseio.com","storageBucket":"channel-partner-54334.firebasestorage.app","apiKey":"AIzaSyCZVYDaxjRUUZG1XCVlxFEJrOPhMle6noI","authDomain":"channel-partner-54334.firebaseapp.com","messagingSenderId":"801644118506","measurementId":"G-TNB66PSD89","projectNumber":"801644118506","version":"2"}
+[debug] [2026-01-17T22:16:57.864Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:57.864Z] Checked if tokens are valid: true, expires at: 1768691784859
+[debug] [2026-01-17T22:16:57.864Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334 [none]
+[debug] [2026-01-17T22:16:58.203Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334 200
+[debug] [2026-01-17T22:16:58.203Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/channel-partner-54334 {"projectId":"channel-partner-54334","projectNumber":"801644118506","displayName":"channel-partner","name":"projects/channel-partner-54334","resources":{"hostingSite":"channel-partner-54334","realtimeDatabaseInstance":"channel-partner-54334-default-rtdb"},"state":"ACTIVE","etag":"1_6e8e77a3-c690-4f01-bff6-ddb9b769724f"}
+[info] i  hosting[channel-partner-54334]: Serving hosting files from: ../dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m../dist\u001b[22m"}}
+[info] ✔  hosting[channel-partner-54334]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2026-01-17T22:16:58.288Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions\" for Cloud Functions..."}}
+[debug] [2026-01-17T22:16:58.292Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2026-01-17T22:17:01.520Z] > [functions] package.json contents: {
+  "name": "certificate-generator-functions",
+  "version": "1.0.0",
+  "description": "Cloud Functions for Certificate Generator",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build needed'",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "verify": "node ../verify-setup.js"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "^131.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^4.9.0",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.9.7",
+    "puppeteer-core": "^21.11.0",
+    "twilio": "^4.19.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  }
+}
+[debug] [2026-01-17T22:17:01.520Z] Building nodejs source
+[debug] [2026-01-17T22:17:01.521Z] Failed to find version of module node: reached end of search path /Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "20" doesn't match your global version "24". Using node@24 from host. 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2026-01-17T22:17:01.527Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-17T22:17:01.532Z] Found firebase-functions binary at '/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8151
+
+[info] ✅ WhatsApp configured via AiSensy
+
+[info]    Campaign Name: pdf_certificate
+
+[debug] [2026-01-17T22:17:02.523Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":1024,"timeoutSeconds":300,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"},"processScheduledCampaigns":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"scheduleTrigger":{"schedule":"every 1 minutes","retryConfig":{"retryCount":null,"maxDoublings":null,"maxRetryDuration":null,"maxBackoffDuration":null,"minBackoffDuration":null},"timeZone":null},"labels":{},"entryPoint":"processScheduledCampaigns"}},"specVersion":"v1alpha1","requiredAPIs":[{"api":"cloudscheduler.googleapis.com","reason":"Needed for scheduled functions."}]}
+[debug] [2026-01-17T22:17:04.745Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:04.745Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:04.745Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:04.745Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:04.747Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] ✔  functions: Loaded functions definitions from source: api, processScheduledCampaigns. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api, processScheduledCampaigns."}}
+[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/channel-partner-54334/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/channel-partner-54334/us-central1/api)."}}
+[info] i  functions[us-central1-processScheduledCampaigns]: function ignored because the pubsub emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the pubsub emulator does not exist or is not running."}}
+[debug] [2026-01-17T22:17:06.581Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4001/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4001/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore  │ 127.0.0.1:8080 │ http://127.0.0.1:4001/firestore  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting    │ 127.0.0.1:5002 │ n/a                              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Storage    │ 127.0.0.1:9199 │ http://127.0.0.1:4001/storage    │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4001/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-01-17T22:17:07.512Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:07.511Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:07.512Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:07.511Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:07.512Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/templates --> us-central1-api
+[debug] [2026-01-17T22:17:07.513Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:07.513Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates"}}
+[debug] [2026-01-17T22:17:07.519Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2026-01-17T22:17:07.521Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2026-01-17T22:17:08.503Z] [runtime-status] [40258] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.504Z] [runtime-status] [40258] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.504Z] [runtime-status] [40258] Found local functions config: /Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Found local functions config: /Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/.runtimeconfig.json"}}
+[debug] [2026-01-17T22:17:08.505Z] [runtime-status] [40258] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-01-17T22:17:08.506Z] [runtime-status] [40258] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.841Z] [runtime-status] [40258] Checked functions.config() {"config":{"whatsapp":{"api_key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWUwNjJjMmU2ODRjMGM2MTA0MDU5MiIsIm5hbWUiOiJUT1AgU0VMTElORyBQUk9QRVJUWSIsImFwcE5hbWUiOiJBaVNlbnN5IiwiY2xpZW50SWQiOiI2ODllMDYyYzJlNjg0YzBjNjEwNDA1OGQiLCJhY3RpdmVQbGFuIjoiRlJFRV9GT1JFVkVSIiwiaWF0IjoxNzU1MTg2NzMyfQ.v-ZzaEeVf_AnIiIoCXy2mZWvZ92nYTGhZd9oEksrFqE","access_token":"YOUR_REAL_TOKEN","phone_number_id":"YOUR_REAL_PHONE_ID"},"email":{"user":"your_real_email@gmail.com","pass":"YOUR_REAL_APP_PASSWORD"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Checked functions.config() {\"config\":{\"whatsapp\":{\"api_key\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWUwNjJjMmU2ODRjMGM2MTA0MDU5MiIsIm5hbWUiOiJUT1AgU0VMTElORyBQUk9QRVJUWSIsImFwcE5hbWUiOiJBaVNlbnN5IiwiY2xpZW50SWQiOiI2ODllMDYyYzJlNjg0YzBjNjEwNDA1OGQiLCJhY3RpdmVQbGFuIjoiRlJFRV9GT1JFVkVSIiwiaWF0IjoxNzU1MTg2NzMyfQ.v-ZzaEeVf_AnIiIoCXy2mZWvZ92nYTGhZd9oEksrFqE\",\"access_token\":\"YOUR_REAL_TOKEN\",\"phone_number_id\":\"YOUR_REAL_PHONE_ID\"},\"email\":{\"user\":\"your_real_email@gmail.com\",\"pass\":\"YOUR_REAL_APP_PASSWORD\"}}}"}}
+[debug] [2026-01-17T22:17:08.841Z] [runtime-status] [40258] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2026-01-17T22:17:08.842Z] [runtime-status] [40258] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.842Z] [runtime-status] [40258] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.844Z] [runtime-status] [40258] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:08.844Z] [runtime-status] [40258] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2026-01-17T22:17:08.929Z] [runtime-status] [40258] initializeApp(DEFAULT) {"storageBucket":"channel-partner-54334.firebasestorage.app"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] initializeApp(DEFAULT) {\"storageBucket\":\"channel-partner-54334.firebasestorage.app\"}"}}
+[info] >  ✅ WhatsApp configured via AiSensy {"user":"✅ WhatsApp configured via AiSensy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ WhatsApp configured via AiSensy"}}
+[info] >     Campaign Name: pdf_certificate {"user":"   Campaign Name: pdf_certificate","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m    Campaign Name: pdf_certificate"}}
+[debug] [2026-01-17T22:17:09.708Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z"],"queueLength":1,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:07.511Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:09.712Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:07.511Z","/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z"],"workRunningCount":2}
+[debug] [2026-01-17T22:17:09.712Z] Accepted request OPTIONS /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:09.724Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:09.726Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:09.738Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2026-01-17T22:17:09.742Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2026-01-17T22:17:10.309Z] [runtime-status] [40258] Functions runtime initialized. {"cwd":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions","node_version":"24.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Functions runtime initialized. {\"cwd\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions\",\"node_version\":\"24.10.0\"}"}}
+[debug] [2026-01-17T22:17:10.310Z] [runtime-status] [40258] Listening to port: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/fire_emu_81045e91dbb5f7c1.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40258] Listening to port: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/fire_emu_81045e91dbb5f7c1.sock"}}
+[debug] [2026-01-17T22:17:10.329Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:10.329Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:10.331Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:10.639Z] Jan 18, 2026 3:47:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 18, 2026 3:47:10 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2026-01-17T22:17:10.890Z] [runtime-status] [40287] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-01-17T22:17:10.892Z] [runtime-status] [40287] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:10.892Z] [runtime-status] [40287] Found local functions config: /Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Found local functions config: /Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/.runtimeconfig.json"}}
+[debug] [2026-01-17T22:17:10.892Z] [runtime-status] [40287] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2026-01-17T22:17:10.893Z] [runtime-status] [40287] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:11.101Z] [runtime-status] [40287] Checked functions.config() {"config":{"whatsapp":{"api_key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWUwNjJjMmU2ODRjMGM2MTA0MDU5MiIsIm5hbWUiOiJUT1AgU0VMTElORyBQUk9QRVJUWSIsImFwcE5hbWUiOiJBaVNlbnN5IiwiY2xpZW50SWQiOiI2ODllMDYyYzJlNjg0YzBjNjEwNDA1OGQiLCJhY3RpdmVQbGFuIjoiRlJFRV9GT1JFVkVSIiwiaWF0IjoxNzU1MTg2NzMyfQ.v-ZzaEeVf_AnIiIoCXy2mZWvZ92nYTGhZd9oEksrFqE","access_token":"YOUR_REAL_TOKEN","phone_number_id":"YOUR_REAL_PHONE_ID"},"email":{"user":"your_real_email@gmail.com","pass":"YOUR_REAL_APP_PASSWORD"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Checked functions.config() {\"config\":{\"whatsapp\":{\"api_key\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWUwNjJjMmU2ODRjMGM2MTA0MDU5MiIsIm5hbWUiOiJUT1AgU0VMTElORyBQUk9QRVJUWSIsImFwcE5hbWUiOiJBaVNlbnN5IiwiY2xpZW50SWQiOiI2ODllMDYyYzJlNjg0YzBjNjEwNDA1OGQiLCJhY3RpdmVQbGFuIjoiRlJFRV9GT1JFVkVSIiwiaWF0IjoxNzU1MTg2NzMyfQ.v-ZzaEeVf_AnIiIoCXy2mZWvZ92nYTGhZd9oEksrFqE\",\"access_token\":\"YOUR_REAL_TOKEN\",\"phone_number_id\":\"YOUR_REAL_PHONE_ID\"},\"email\":{\"user\":\"your_real_email@gmail.com\",\"pass\":\"YOUR_REAL_APP_PASSWORD\"}}}"}}
+[debug] [2026-01-17T22:17:11.101Z] [runtime-status] [40287] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2026-01-17T22:17:11.101Z] [runtime-status] [40287] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:11.102Z] [runtime-status] [40287] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2026-01-17T22:17:11.103Z] [runtime-status] [40287] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.9.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.9.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2026-01-17T22:17:11.103Z] [runtime-status] [40287] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.7.0","resolution":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.7.0\",\"resolution\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2026-01-17T22:17:11.174Z] [runtime-status] [40287] initializeApp(DEFAULT) {"storageBucket":"channel-partner-54334.firebasestorage.app"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] initializeApp(DEFAULT) {\"storageBucket\":\"channel-partner-54334.firebasestorage.app\"}"}}
+[info] >  ✅ WhatsApp configured via AiSensy {"user":"✅ WhatsApp configured via AiSensy","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ✅ WhatsApp configured via AiSensy"}}
+[info] >     Campaign Name: pdf_certificate {"user":"   Campaign Name: pdf_certificate","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m    Campaign Name: pdf_certificate"}}
+[debug] [2026-01-17T22:17:11.649Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1319.06275ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1319.06275ms"}}
+[debug] [2026-01-17T22:17:11.650Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:11.650Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:11.650Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:11.650Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:11.706Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:11.706Z"],"queueLength":1,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:11.706Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z","/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:11.706Z"],"workRunningCount":2}
+[debug] [2026-01-17T22:17:11.706Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/template --> us-central1-api
+[debug] [2026-01-17T22:17:11.709Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:11.709Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template"}}
+[debug] [2026-01-17T22:17:11.709Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:11.710Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:11.805Z] [runtime-status] [40287] Functions runtime initialized. {"cwd":"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions","node_version":"24.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Functions runtime initialized. {\"cwd\":\"/Users/vishalpanwar/Code/React-Native/TSP-Certification-module/firebase-backend/functions\",\"node_version\":\"24.10.0\"}"}}
+[debug] [2026-01-17T22:17:11.806Z] [runtime-status] [40287] Listening to port: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/fire_emu_266bb5a128507864.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [40287] Listening to port: /var/folders/7r/5rmx1c7s6k74nyts0d7gbjmc0000gn/T/fire_emu_266bb5a128507864.sock"}}
+[debug] [2026-01-17T22:17:11.835Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 125.53925ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 125.53925ms"}}
+[debug] [2026-01-17T22:17:11.836Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:11.836Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:11.836Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:11.836Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:09.700Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:11.867Z] [worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE"}}
+[debug] [2026-01-17T22:17:11.868Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:11.868Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:11.873Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 4.428667ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 4.428667ms"}}
+[debug] [2026-01-17T22:17:11.873Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:11.874Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:11.874Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:11.874Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:11.877Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:11.877Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:11.877Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:11.877Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:11.877Z] Accepted request GET /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:11.878Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:11.878Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:11.878Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:11.878Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:11.927Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 48.992833ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 48.992833ms"}}
+[debug] [2026-01-17T22:17:11.927Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:11.928Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:11.928Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:11.928Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:32.663Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:32.659Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:32.668Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:32.659Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:32.668Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/templates --> us-central1-api
+[debug] [2026-01-17T22:17:32.700Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:32.701Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates"}}
+[debug] [2026-01-17T22:17:32.701Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:32.703Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:32.754Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 51.646584ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 51.646584ms"}}
+[debug] [2026-01-17T22:17:32.755Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:32.755Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:32.755Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:32.755Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:32.771Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:32.771Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:32.771Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:32.771Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:32.771Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/template --> us-central1-api
+[debug] [2026-01-17T22:17:32.772Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:32.772Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template"}}
+[debug] [2026-01-17T22:17:32.772Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:32.772Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:32.791Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 18.695792ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 18.695792ms"}}
+[debug] [2026-01-17T22:17:32.791Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:32.791Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:32.791Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:32.791Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:34.687Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:34.686Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:34.691Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:34.686Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:34.692Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/templates --> us-central1-api
+[debug] [2026-01-17T22:17:34.700Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:34.702Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/templates, mapping to path=/certificates/templates"}}
+[debug] [2026-01-17T22:17:34.703Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:34.707Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:34.730Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.730Z"],"queueLength":1,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:34.686Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:34.730Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:34.686Z","/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.730Z"],"workRunningCount":2}
+[debug] [2026-01-17T22:17:34.730Z] Accepted request OPTIONS /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:34.731Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:34.731Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:34.731Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:34.731Z] [worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: BUSY"}}
+[debug] [2026-01-17T22:17:34.767Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 36.575875ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 36.575875ms"}}
+[debug] [2026-01-17T22:17:34.768Z] [worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE"}}
+[debug] [2026-01-17T22:17:34.768Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:34.768Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:34.768Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/templates-2026-01-17T22:17:34.686Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:34.781Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 74.787958ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 74.787958ms"}}
+[debug] [2026-01-17T22:17:34.782Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:34.782Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:34.782Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:34.782Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:34.795Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.795Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:34.795Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.795Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:34.795Z] Accepted request GET /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:34.797Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:34.798Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:34.798Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:34.798Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:34.799Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:34.799Z"],"queueLength":1,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.795Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:34.799Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:34.795Z","/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:34.799Z"],"workRunningCount":2}
+[debug] [2026-01-17T22:17:34.799Z] Accepted request GET /channel-partner-54334/us-central1/api/certificates/template --> us-central1-api
+[debug] [2026-01-17T22:17:34.800Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:34.800Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/certificates/template, mapping to path=/certificates/template"}}
+[debug] [2026-01-17T22:17:34.800Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:34.800Z] [worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: BUSY"}}
+[debug] [2026-01-17T22:17:34.827Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 29.546ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 29.546ms"}}
+[debug] [2026-01-17T22:17:34.828Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:34.828Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:34.828Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:34.828Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/certificates/template-2026-01-17T22:17:34.799Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:35.105Z] Jan 18, 2026 3:47:35 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 18, 2026 3:47:35 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2026-01-17T22:17:35.131Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 331.155958ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 331.155958ms"}}
+[debug] [2026-01-17T22:17:35.131Z] [worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-bdc3b211-8d2e-4461-aab7-fb35e5622d6c]: IDLE"}}
+[debug] [2026-01-17T22:17:35.132Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:35.132Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:35.132Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:39.753Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:39.752Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:39.754Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:39.752Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:39.754Z] Accepted request OPTIONS /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:39.758Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:39.759Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:39.760Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:39.762Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:39.769Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 8.221042ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 8.221042ms"}}
+[debug] [2026-01-17T22:17:39.770Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:39.770Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:39.770Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:39.770Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:39.774Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:39.774Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:17:39.774Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:17:39.774Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:17:39.774Z] Accepted request GET /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:17:39.774Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:17:39.774Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:17:39.774Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:17:39.775Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:17:39.823Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 48.527583ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 48.527583ms"}}
+[debug] [2026-01-17T22:17:39.823Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:17:39.823Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:17:39.824Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:17:39.824Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:21.234Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:20.344Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:25.136Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:20.344Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:18:25.749Z] Accepted request OPTIONS /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:18:32.961Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:18:33.026Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:18:33.062Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:18:33.143Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:18:33.983Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 845.413542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 845.413542ms"}}
+[debug] [2026-01-17T22:18:33.989Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:18:33.990Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:18:33.990Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:18:33.993Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:34.054Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:34.054Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:34.054Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:34.054Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:18:34.054Z] Accepted request GET /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:18:35.070Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:18:35.088Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:18:35.173Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:18:35.179Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:18:41.215Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 6056.79825ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 6056.79825ms"}}
+[debug] [2026-01-17T22:18:41.256Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:18:41.256Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:18:41.257Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:18:41.258Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:41.420Z] [work-queue] {"queuedWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:41.419Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:18:41.421Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/channel-partner-54334/us-central1/api/notifications-2026-01-17T22:18:41.419Z"],"workRunningCount":1}
+[debug] [2026-01-17T22:18:41.421Z] Accepted request GET /channel-partner-54334/us-central1/api/notifications?limit=20 --> us-central1-api
+[debug] [2026-01-17T22:18:41.545Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2026-01-17T22:18:41.566Z] [functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/channel-partner-54334/us-central1/api/notifications?limit=20, mapping to path=/notifications?limit=20"}}
+[debug] [2026-01-17T22:18:41.568Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2026-01-17T22:18:41.570Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: BUSY"}}
+[debug] [2026-01-17T22:18:43.072Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 1525.6815000000001ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 1525.6815000000001ms"}}
+[debug] [2026-01-17T22:18:43.123Z] [worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-fcb9de6d-689b-438b-90e3-dc17b7eceda2]: IDLE"}}
+[debug] [2026-01-17T22:18:43.133Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2026-01-17T22:18:43.152Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2026-01-17T22:18:43.154Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2026-01-17T22:19:19.950Z] Received signal SIGTERM 1
+[info]  
+[info] i  emulators: Received SIGTERM for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGTERM signal again to stop right now. 
+[debug] [2026-01-17T22:19:20.429Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.467Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.470Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.471Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.473Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.477Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.481Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.486Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.495Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.517Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.522Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.525Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.529Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.531Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.532Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.533Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.535Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.538Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.556Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.557Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.562Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.567Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.572Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-01-17T22:19:20.583Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:159:15)
+    at writeGeneric (node:internal/stream_base_commons:150:3)
+    at Socket._writeGeneric (node:net:966:11)
+    at Socket._write (node:net:978:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+[error] 
+[error] Error: An unexpected error has occurred.
